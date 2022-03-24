@@ -1,4 +1,4 @@
-# Vue 3 + Vite
+# Dashboard Mockup Test Vue 3 + Vite
 
 ## How to run
 
