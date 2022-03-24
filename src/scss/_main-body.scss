@@ -1,0 +1,58 @@
+body{
+    background-color: rgba($color: #f0f7fd, $alpha: 1.0);
+    z-index: -10;
+}
+.first-row{
+    &__container{
+        .text-body1{
+            font-weight: 700;
+        }
+        .text-body2{
+            color: #808080;
+            font-size: medium;
+        }
+    }
+    &__button{
+        font-family: "Roboto";
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 16px;
+        padding:20px 30px 20px 30px;
+        box-shadow: unset;
+        border-radius: 10px;
+    }
+}
+.second-row{
+    .result-card-container{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 5px;
+        padding:20px 0;
+        flex-wrap: wrap;
+    }
+    @for $i from 1 through 3 {
+        .result-card-container:nth-child(#{$i}){
+            @if($i == 1){
+                @include backgroundChange(#ddf7ef,"../assets/images/mask.png")
+            }
+            @else if($i == 2){
+               @include backgroundChange(#fef6ee,"../assets/images/stethoscope.png")
+            }
+            @else{
+                @include backgroundChange(#e5f1ff,"../assets/images/first-aid-kit.png")
+            }
+        }
+    }
+}
+
+    .chart-container{
+        border-radius: 15px;
+    }
+
+    .appointment-container{
+        background-color: #f4faff;
+        border-radius: 18px;
+    }

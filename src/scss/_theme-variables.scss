@@ -1,0 +1,21 @@
+/* Result Card mixin */
+@mixin backgroundChange($color,$imageUrl) {
+    .avatar{
+        background-color: $color;
+        background-image: url($imageUrl);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+    }
+}
+
+/* Side Bar Variabes */
+$sidebar-hide-width: 1007px;
+$sidebar-width: 280px;
+
+
+/* Search Box Variables */ 
+$search-box-ml: 40px;
+
+/* Header Variables */
+$header-height: 80px;
